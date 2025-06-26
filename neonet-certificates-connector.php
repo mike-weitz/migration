@@ -33,24 +33,24 @@ function get_certificates_instance()
 }
 
 // Instantiate the main plugin class
-function neonet_events_connector_init()
+function neonet_events_certificates_init()
 {
     get_certificates_instance();
 }
-add_action('plugins_loaded', 'neonet_events_connector_init');
+add_action('plugins_loaded', 'neonet_events_certificates_init');
 
 // ---- Plugin Lifecycle Hooks ----
 
 // Perform actions needed on plugin activation
-function activate_neonet_events_connector()
+function activate_neonet_events_certificates()
 {
     flush_rewrite_rules();
 }
-register_activation_hook(__FILE__, __NAMESPACE__ . '\activate_neonet_events_connector');
+register_activation_hook(__FILE__, __NAMESPACE__ . '\activate_neonet_events_certificates');
 
 // Perform actions needed on plugin deactivation
-function deactivate_neonet_events_connector()
+function deactivate_neonet_events_certificates()
 {
     flush_rewrite_rules();
 }
-register_deactivation_hook(__FILE__, __NAMESPACE__ . '\deactivate_neonet_events_connector');
+register_deactivation_hook(__FILE__, __NAMESPACE__ . '\deactivate_neonet_events_certificates');

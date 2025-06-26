@@ -91,7 +91,7 @@ class Certificates
             'host' => 'nond'
         ],
     ];
-    protected $redirect_url = "http://events-connector.local/demo";
+    protected $redirect_url = "https://neonet.org/my-certificates";
 
     /**
      * Constructor
