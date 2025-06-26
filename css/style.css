@@ -1,0 +1,176 @@
+:root {
+  --neonet-event-governance-bg: #cfcfcf;
+  --neonet-event-governance-border: #6b6b6b;
+  --neonet-event-student-bg: #dfb9bd;
+  --neonet-event-student-border: #ba6870;
+  --neonet-event-edtech-bg: #c2b7cd;
+  --neonet-event-edtech-border: #88729d;
+  --neonet-event-fiscal-bg: #aac5b6;
+  --neonet-event-fiscal-border: #65937a;
+  --neonet-event-tech-bg: #afc5d4;
+  --neonet-event-tech-border: #6891ae;
+}
+
+.neonet-api-events {
+  padding: 12px 0;
+  display: grid;
+}
+
+.neonet-api-disclaimer {
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.neonet-api-no-events {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.neonet-api-no-events p {
+  padding: 0;
+  margin: 0;
+  font-size: 24px;
+}
+
+.neonet-api-events a {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+.neonet-api-events a:hover {
+  text-decoration: none;
+}
+
+.neonet-api-view-calendar {
+  margin-top: 4px;
+  width: 100%;
+  display: grid;
+  place-content: center;
+}
+
+.neonet-api-view-calendar a {
+  font-size: 14px;
+}
+
+.neonet-api-view-calendar a:hover {
+  text-decoration: underline;
+}
+
+.neonet-api-event {
+  width: 100%;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 0px !important;
+  padding-left: 0px !important;
+  /* padding: 12px 0; */
+  display: flex;
+  gap: 4px;
+}
+
+.neonet-api-event h3 {
+  font-size: 14px;
+  font-weight: 700;
+  margin: 0;
+  padding: 2px 4px;
+  color: black;
+}
+
+.neonet-api-title.neonet-api-ed_tech {
+  background-color: var(--neonet-event-edtech-bg);
+  border-left: var(--neonet-event-edtech-border) 4px solid;
+}
+
+.neonet-api-title.neonet-api-fiscal {
+  background-color: var(--neonet-event-fiscal-bg);
+  border-left: var(--neonet-event-fiscal-border) 4px solid;
+}
+
+.neonet-api-title.neonet-api-governance {
+  background-color: var(--neonet-event-governance-bg);
+  border-left: var(--neonet-event-governance-border) 4px solid;
+}
+
+.neonet-api-title.neonet-api-student_services {
+  background-color: var(--neonet-event-student-bg);
+  border-left: var(--neonet-event-student-border) 4px solid;
+}
+
+.neonet-api-title.neonet-api-tech_services {
+  background-color: var(--neonet-event-tech-bg);
+  border-left: var(--neonet-event-tech-border) 4px solid;
+}
+
+.neonet-api-title.neonet-api-hybrid_training {
+  background-color: var(--neonet-event-hybrid_training-bg);
+  border-left: var(--neonet-event-hybrid_training-border) 4px solid;
+}
+
+.neonet-api-event p {
+  margin: 0;
+}
+
+.neonet-api-details {
+  display: grid;
+  align-items: center;
+  gap: 2px;
+  flex-grow: 1;
+}
+
+.neonet-api-details p {
+  font-size: 12px;
+}
+
+.neonet-api-date-block {
+  height: 64px;
+  width: 64px;
+  display: grid;
+  place-content: center;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.neonet-api-time {
+  display: inline-flex;
+  gap: 8px;
+}
+
+.neonet-api-date {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.neonet-api-month {
+  font-size: 12px;
+  color: #5d5d5d;
+  text-transform: uppercase;
+}
+
+.neonet-api-certificates ul {
+  display: grid;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+}
+
+.neonet-api-certificates a {
+  text-decoration: none;
+  font-size: inherit;
+}
+
+.neonet-api-certificates a:hover {
+  & .neonet-api-certificate-title {
+    color: #f4c051;
+  }
+}
+
+.neonet-api-certificate-title {
+  color: rgba(13, 110, 253);
+}
